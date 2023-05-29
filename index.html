@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kayak</title>
+
+</head>
+
+<body>
+
+
+  <section class="title-section">
+    <div class="container mt-3">
+      <h1 class="title dark">
+        Busca en cientos de webs de vuelos a la vez.
+      </h1>
+    </div>
+  </section>
+
+  <div class="container sub-separate">
+    <div>
+      <div class="row blocks">
+        <form class="form-inline">
+          <div class="form-group">
+            <div>
+              <div class="selectstyle" id="build-fileicon-flight-type">
+                <select tabindex="0" class="fake-select" aria-label="Tipo de viaje">
+                  <option value=""></option>
+                  <option value="oneway" aria-label="Solo ida" aria-selected="false">Solo ida</option>
+                  <option value="roundtrip" aria-label="Ida y vuelta" aria-selected="true">Ida y vuelta</option>
+                  <option value="multicity" aria-label="Multi-destino" aria-selected="false">Multi-destino</option>
+                  <option value="nomad" aria-label="Generador de viajes" aria-selected="false">Generador de viajes
+                  </option>
+                </select>
+                <div class="selectedstyle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false"><span class="selected-value-style">Ida y vuelta</span><span
+                    style="transform:translate3d(0,0,0);vertical-align:middle;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale"
+                    class="chevron-icon-wrapper-size" aria-hidden="true"><svg viewBox="0 0 200 200" width="100%"
+                      height="100%" xmlns="http://www.w3.org/2000/svg" class="one-chevron" role="img"
+                      style="width:inherit;height:inherit;line-height:inherit;color:inherit">
+                      <path
+                        d="M100 132.5c-3.873 0 .136 2.376-64.801-51.738l9.603-11.523L100 115.237l55.199-45.999l9.603 11.523C99.806 134.924 103.855 132.5 100 132.5z">
+                      </path>
+                    </svg></span></div>
+                <ul id="popupp" class="dropdown-menu" role="tablist" tabindex="0" aria-haspopupp="true"
+                  aria-activedescendant="p" style="max-height: 200px;">
+                  <li role="tab" aria-label="Solo ida" aria-selected="false" class="" id="oneway" tabindex="0">
+                    <span>Solo
+                      ida</span></li>
+                  <li role="tab" aria-label="Ida y vuelta" aria-selected="true" class="QHyi-mod-focused" id="roundtrip"
+                    tabindex="0"><span>Ida y vuelta</span></li>
+                  <li role="tab" aria-label="Multi-destino" aria-selected="false" class="" id="multicity" tabindex="0">
+                    <span>Multi-destino</span>
+                  </li>
+                  <li role="tab" aria-label="Generador de viajes" aria-selected="false" class="" id="nomad"
+                    tabindex="0">
+                    <span>Generador de viajes</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="form-group" id="button-field">
+            <div class="button-field">
+              <span class="travellersTotal">1 viajeros</span>
+              <span
+                style="transform:translate3d(0,0,0);vertical-align:middle;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale"
+                class="chevron-icon-wrapper-size" aria-hidden="true"><svg viewBox="0 0 200 200" width="100%"
+                  height="100%" xmlns="http://www.w3.org/2000/svg" class="one-chevron" role="img"
+                  style="width:inherit;height:inherit;line-height:inherit;color:inherit">
+                  <path
+                    d="M100 132.5c-3.873 0 .136 2.376-64.801-51.738l9.603-11.523L100 115.237l55.199-45.999l9.603 11.523C99.806 134.924 103.855 132.5 100 132.5z">
+                  </path>
+                </svg></span>
+              <div id="popover" role="presentation" aria-modal="true" aria-expanded="true" aria-label="Pasajeros"
+                tabindex="0" class="Popover mod-layer-default" style="position: absolute;">
+                <div class="xvRy xvRy-mod-radius-default xvRy-mod-animated xvRy-visible"
+                  style="width: 330px; height: 260px">
+                  <div role="tab" tabindex="0" style="opacity: 0; height: 0px; width: 0px;" aria-hidden="true"></div>
+                  <div class="xvRy-content">
+                    <div class="UKFa UKFa-mod-variant-default">
+                      <div class="rowpasagerstype"><label class="rowpasagerstype-label"><span>Adultos</span><span
+                            class="subLabel">18+</span></label>
+                        <div class="countpasagers bCGf-mod-theme-default"><button
+                            class="bCGf-mod-theme-default decrease-btn verify-btn" tabindex="-1" aria-label="Menos"
+                            aria-disabled="false"><svg viewBox="0 0 200 200" width="10" height="10"
+                              xmlns="http://www.w3.org/2000/svg" role="img">
+                              <path d="M30 92.5h140v15H30z"></path>
+                            </svg></button><input class="bCGf-mod-theme-default " id="num-input" tabindex="0"
+                            role="spinbutton" aria-valuenow="1" aria-valuemin="0" aria-valuemax="8" aria-label="Adultos"
+                            value="1"><button class="bCGf-mod-theme-default  increase-btn" tabindex="-1"
+                            aria-label="Menos" aria-disabled="false"><svg viewBox="0 0 200 200" width="10" height="10"
+                              xmlns="http://www.w3.org/2000/svg" role="img">
+                              <path d="M107.5 92.5V30h-15v62.5H30v15h62.5V170h15v-62.5H170v-15z"></path>
+                            </svg></button></div>
+                      </div>
+                      <div class="rowpasagerstype"><label class="rowpasagerstype-label"><span>Estudiantes</span><span
+                            class="subLabel">mayores de 18</span></label>
+                        <div class="countpasagers bCGf-mod-theme-default"><button
+                            class="bCGf-mod-theme-default decrease-btn verify-btn" tabindex="-1" aria-label="Menos"
+                            aria-disabled="false"><svg viewBox="0 0 200 200" width="10" height="10"
+                              xmlns="http://www.w3.org/2000/svg" role="img">
+                              <path d="M30 92.5h140v15H30z"></path>
+                            </svg></button><input class="bCGf-mod-theme-default " id="num-input2" tabindex="0"
+                            role="spinbutton" aria-valuenow="1" aria-valuemin="0" aria-valuemax="8"
+                            aria-label="Estudiantes" value="0"><button class="bCGf-mod-theme-default increase-btn "
+                            tabindex="-1" aria-label="Menos" aria-disabled="false"><svg viewBox="0 0 200 200" width="10"
+                              height="10" xmlns="http://www.w3.org/2000/svg" role="img">
+                              <path d="M107.5 92.5V30h-15v62.5H30v15h62.5V170h15v-62.5H170v-15z"></path>
+                            </svg></button></div>
+                      </div>
+                      <div class="rowpasagerstype"><label class="rowpasagerstype-label"><span>Jóvenes</span><span
+                            class="subLabel">12-17</span></label>
+                        <div class="countpasagers bCGf-mod-theme-default"><button
+                            class="bCGf-mod-theme-default decrease-btn" tabindex="-1" aria-label="Menos"
+                            aria-disabled="false"><svg viewBox="0 0 200 200" width="10" height="10"
+                              xmlns="http://www.w3.org/2000/svg" role="img">
+                              <path d="M30 92.5h140v15H30z"></path>
+                            </svg></button><input class="bCGf-mod-theme-default" tabindex="0" role="spinbutton"
+                            aria-valuenow="1" aria-valuemin="0" aria-valuemax="4" aria-label="Jóvenes" value="0"><button
+                            class="bCGf-mod-theme-default  increase-btn" tabindex="-1" aria-label="Menos"
+                            aria-disabled="false"><svg viewBox="0 0 200 200" width="10" height="10"
+                              xmlns="http://www.w3.org/2000/svg" role="img">
+                              <path d="M107.5 92.5V30h-15v62.5H30v15h62.5V170h15v-62.5H170v-15z"></path>
+                            </svg></button></div>
+                      </div>
+                      <div class="rowpasagerstype"><label class="rowpasagerstype-label"><span>Niños</span><span
+                            class="subLabel">2-11</span></label>
+                        <div class="countpasagers bCGf-mod-theme-default"><button
+                            class="bCGf-mod-theme-default  decrease-btn" tabindex="-1" aria-label="Menos"
+                            aria-disabled="false"><svg viewBox="0 0 200 200" width="10" height="10"
+                              xmlns="http://www.w3.org/2000/svg" role="img">
+                              <path d="M30 92.5h140v15H30z"></path>
+                            </svg></button><input class="bCGf-mod-theme-default" tabindex="0" role="spinbutton"
+                            aria-valuenow="1" aria-valuemin="0" aria-valuemax="4" aria-label="Niños" value="0"><button
+                            class="bCGf-mod-theme-default increase-btn" tabindex="-1" aria-label="Menos"
+                            aria-disabled="false"><svg viewBox="0 0 200 200" width="10" height="10"
+                              xmlns="http://www.w3.org/2000/svg" role="img">
+                              <path d="M107.5 92.5V30h-15v62.5H30v15h62.5V170h15v-62.5H170v-15z"></path>
+                            </svg></button></div>
+                      </div>
+                      <div class="rowpasagerstype"><label class="rowpasagerstype-label"><span>Bebés en
+                            asiento</span><span class="subLabel">menos de 2</span></label>
+                        <div class="countpasagers bCGf-mod-theme-default"><button
+                            class="bCGf-mod-theme-default  decrease-btn" tabindex="-1" aria-label="Menos"
+                            aria-disabled="false"><svg viewBox="0 0 200 200" width="10" height="10"
+                              xmlns="http://www.w3.org/2000/svg" role="img">
+                              <path d="M30 92.5h140v15H30z"></path>
+                            </svg></button><input class="bCGf-mod-theme-default" tabindex="0" role="spinbutton"
+                            aria-valuenow="1" aria-valuemin="0" aria-valuemax="4" aria-label="Bebés en asiento"
+                            value="0"><button class="bCGf-mod-theme-default  increase-btn" tabindex="-1"
+                            aria-label="Menos" aria-disabled="false"><svg viewBox="0 0 200 200" width="10" height="10"
+                              xmlns="http://www.w3.org/2000/svg" role="img">
+                              <path d="M107.5 92.5V30h-15v62.5H30v15h62.5V170h15v-62.5H170v-15z"></path>
+                            </svg></button></div>
+                      </div>
+                      <div class="rowpasagerstype"><label class="rowpasagerstype-label"><span>Bebés en
+                            regazo</span><span class="subLabel">menos de 2</span></label>
+                        <div class="countpasagers bCGf-mod-theme-default"><button
+                            class="bCGf-mod-theme-default  decrease-btn" tabindex="-1" aria-label="Menos"
+                            aria-disabled="false"><svg viewBox="0 0 200 200" width="10" height="10"
+                              xmlns="http://www.w3.org/2000/svg" role="img">
+                              <path d="M30 92.5h140v15H30z"></path>
+                            </svg></button><input class="bCGf-mod-theme-default" tabindex="0" role="spinbutton"
+                            aria-valuenow="1" aria-valuemin="0" aria-valuemax="2" aria-label="Bebés en regazo"
+                            value="0"><button class="bCGf-mod-theme-default  increase-btn" tabindex="-1"
+                            aria-label="Menos" aria-disabled="false"><svg viewBox="0 0 200 200" width="10" height="10"
+                              xmlns="http://www.w3.org/2000/svg" role="img">
+                              <path d="M107.5 92.5V30h-15v62.5H30v15h62.5V170h15v-62.5H170v-15z"></path>
+                            </svg></button></div>
+                      </div>
+
+                    </div>
+                    <div role="tab" tabindex="0" style="opacity: 0; height: 0px; width: 0px;" aria-hidden="true"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div>
+              <div class="selectstyle" id="build-fielecon-travel-class">
+                <select tabindex="0" class="fake-select" aria-label="Clase">
+                  <option value=""></option>
+                  <option selected="" value="e" aria-label="Económica" aria-selected="true">Económica</option>
+                  <option value="p" aria-label="Económica Premium" aria-selected="false">Económica Premium</option>
+                  <option value="b" aria-label="Negocios" aria-selected="false">Negocios</option>
+                  <option value="f" aria-label="Primera" aria-selected="false">Primera</option>
+                  <option value="m" aria-label="Mixta" aria-selected="false">Mixta</option>
+                </select>
+                <div class="selectedstyle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false"><span class="selected-value-style">Económica</span><span
+                    style="transform:translate3d(0,0,0);vertical-align:middle;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale"
+                    class="chevron-icon-wrapper-size" aria-hidden="true"><svg viewBox="0 0 200 200" width="100%"
+                      height="100%" xmlns="http://www.w3.org/2000/svg" class="one-chevron" role="img"
+                      style="width:inherit;height:inherit;line-height:inherit;color:inherit">
+                      <path
+                        d="M100 132.5c-3.873 0 .136 2.376-64.801-51.738l9.603-11.523L100 115.237l55.199-45.999l9.603 11.523C99.806 134.924 103.855 132.5 100 132.5z">
+                      </path>
+                    </svg></span>
+                </div>
+
+                <ul id="popup" class="dropdown-menu" role="tablist" tabindex="0" aria-haspopup="true"
+                  aria-activedescendant="p" style="max-height: 200px;">
+                  <li role="tab" aria-label="Económica" aria-selected="false" class="" id="e" tabindex="0">
+                    <span>Económica</span>
+                  </li>
+                  <li role="tab" aria-label="Económica Premium" aria-selected="true" class="QHyi-mod-focused" id="p"
+                    tabindex="0"><span>Económica Premium</span></li>
+                  <li role="tab" aria-label="Negocios" aria-selected="false" class="" id="b" tabindex="0">
+                    <span>Negocios</span>
+                  </li>
+                  <li role="tab" aria-label="Primera" aria-selected="false" class="" id="f" tabindex="0">
+                    <span>Primera</span>
+                  </li>
+                  <li role="tab" aria-label="Mixta" aria-selected="false" class="" id="m" tabindex="0">
+                    <span>Mixta</span>
+                  </li>
+                </ul>
+                <div role="tab" tabindex="0" aria-hidden="true" style="opacity: 0; height: 0px; width: 0px;"></div>
+              </div>
+            </div>
+        </form>
+      </div>
+    </div>
+    <div class="row blocks">
+      <div class=" subgroup">
+        <div class="containercomponent">
+          <div>
+            <div class="subcontainercomponent" id="container-origin">
+              <div class="container-input-icon" aria-hidden="true"><span
+                  style="transform:translate3d(0,0,0);vertical-align:middle;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;width:24px;height:24px"><svg
+                    viewBox="0 0 200 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    class="Tn7z-icon" role="img" style="width:inherit;height:inherit;line-height:inherit;color:inherit">
+                    <path
+                      d="M178.081 41.973c-2.681 2.663-16.065 17.416-28.956 30.221c0 107.916 3.558 99.815-14.555 117.807l-14.358-60.402l-14.67-14.572c-38.873 38.606-33.015 8.711-33.015 45.669c.037 8.071-3.373 13.38-8.263 18.237L50.66 148.39l-30.751-13.513c10.094-10.017 15.609-8.207 39.488-8.207c8.127-16.666 18.173-23.81 26.033-31.62L70.79 80.509L10 66.269c17.153-17.039 6.638-13.895 118.396-13.895c12.96-12.873 26.882-27.703 29.574-30.377c7.745-7.692 28.017-14.357 31.205-11.191c3.187 3.166-3.349 23.474-11.094 31.167zm-13.674 42.469l-8.099 8.027v23.58c17.508-17.55 21.963-17.767 8.099-31.607zm-48.125-47.923c-13.678-13.652-12.642-10.828-32.152 8.57h23.625l8.527-8.57z" />
+                  </svg></span></div>
+              <input type="text" value="" id="autocomplete-input" class="container-input-fake" tabindex="0"
+                aria-readonly="false" placeholder="Origen" aria-label="Origen" aria-autocomplete="list"
+                aria-haspopup="listbox" aria-controls="flight-origin-smarty-input-list" data-test-origin="HAV" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contaier-button-exchange">
+        <div class="button-exchange" role="button" tabindex="0"
+          aria-label="Invertir aeropuertos de salida y de destino">
+          <svg viewBox="0 0 200 200" width="1.25em" height="1.25em" xmlns="http://www.w3.org/2000/svg"
+            class="icon-exchange" role="img">
+            <path
+              d="M56.238 154.801c-25.271-30.326-30.335-33.201-25-39.603l25-30l11.523 9.603L53.013 112.5H120v15H53.013l14.749 17.699l-11.524 9.602zm86.524-40l-11.523-9.603L145.987 87.5H80v-15h65.987l-14.749-17.699l11.523-9.603l25 30c5.335 6.403.272 9.278-24.999 39.603z" />
+          </svg>
+        </div>
+      </div>
+      <div class="subgroup">
+        <div class="containercomponent">
+          <div>
+            <div class="subcontainercomponent" id="container-destination">
+              <div class="container-input-icon" aria-hidden="true"><span
+                  style="transform:translate3d(0,0,0);vertical-align:middle;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;width:24px;height:24px"><svg
+                    viewBox="0 0 200 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    class="Tn7z-icon" role="img" style="width:inherit;height:inherit;line-height:inherit;color:inherit">
+                    <path
+                      d="M178.081 41.973c-2.681 2.663-16.065 17.416-28.956 30.221c0 107.916 3.558 99.815-14.555 117.807l-14.358-60.402l-14.67-14.572c-38.873 38.606-33.015 8.711-33.015 45.669c.037 8.071-3.373 13.38-8.263 18.237L50.66 148.39l-30.751-13.513c10.094-10.017 15.609-8.207 39.488-8.207c8.127-16.666 18.173-23.81 26.033-31.62L70.79 80.509L10 66.269c17.153-17.039 6.638-13.895 118.396-13.895c12.96-12.873 26.882-27.703 29.574-30.377c7.745-7.692 28.017-14.357 31.205-11.191c3.187 3.166-3.349 23.474-11.094 31.167zm-13.674 42.469l-8.099 8.027v23.58c17.508-17.55 21.963-17.767 8.099-31.607zm-48.125-47.923c-13.678-13.652-12.642-10.828-32.152 8.57h23.625l8.527-8.57z" />
+                  </svg></span></div>
+              <input type="text" value="" id="autocomplete-input2" class="container-input-fake" tabindex="0"
+                aria-readonly="false" placeholder="Destino" aria-label="Destino" aria-autocomplete="list"
+                aria-haspopup="listbox" aria-controls="flight-destination-smarty-input-list" data-test-destination="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="doublecontainercomponent">
+        <div class="midledoublecontainercomponent">
+          <div class="subdoublecontainercomponent" tabindex="-1" role="button">
+            <div class="subdoublecontainercomponentdivider">
+              <span class="subconntainer-input-fake" role="button" tabindex="0"
+                aria-label="Fecha de inicio en el calendario">
+                <span class="input-icon-clock">
+                  <span
+                    style="transform:translate3d(0,0,0);vertical-align:middle;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;width:20px;height:20px"><svg
+                      viewBox="0 0 200 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img"
+                      style="width:inherit;height:inherit;line-height:inherit;color:inherit">
+                      <path
+                        d="M185 33.182v30.909H15V33.182h30.909V10h23.182v23.182h61.818V10h23.182v23.182H185zM15 71.818h170v92.727c0 8.535-6.919 15.455-15.455 15.455H30.455C21.919 180 15 173.081 15 164.545V71.818zm115.909 46.364h30.909v-30.91h-30.909v30.91zm-46.364 0h30.909v-30.91H84.545v30.91zm0 46.363h30.909v-30.909H84.545v30.909zm-46.363-46.363h30.909v-30.91H38.182v30.91zm0 46.363h30.909v-30.909H38.182v30.909z">
+                      </path>
+                    </svg></span></span><input type="text" id="dateorigin" class="input-value-clock" aria-live="polite"
+                  aria-atomic="true" aria-label="sábado julio 1º" value="sáb. 1/7"></span>
+            </div>
+            <div class="dateSeparator"></div>
+            <div class="subdoublecontainercomponentdivider">
+              <span class="subconntainer-input-fake" role="button" tabindex="0"
+                aria-label="Fecha final en el calendario"><span class="input-icon-clock"><span
+                    style="transform:translate3d(0,0,0);vertical-align:middle;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;width:20px;height:20px"><svg
+                      viewBox="0 0 200 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img"
+                      style="width:inherit;height:inherit;line-height:inherit;color:inherit">
+                      <path
+                        d="M185 33.182v30.909H15V33.182h30.909V10h23.182v23.182h61.818V10h23.182v23.182H185zM15 71.818h170v92.727c0 8.535-6.919 15.455-15.455 15.455H30.455C21.919 180 15 173.081 15 164.545V71.818zm115.909 46.364h30.909v-30.91h-30.909v30.91zm-46.364 0h30.909v-30.91H84.545v30.91zm0 46.363h30.909v-30.909H84.545v30.909zm-46.363-46.363h30.909v-30.91H38.182v30.91zm0 46.363h30.909v-30.909H38.182v30.909z">
+                      </path>
+                    </svg></span></span><input type="text" id="datedestination" class="input-value-clock"
+                  aria-live="polite" aria-atomic="true" aria-label="sábado julio 1º" value="sáb. 1/7"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="container-button">
+        <button id="buttonsearch">
+          <div class="button-content">
+
+            <i class="fa fa-search"></i>
+          </div>
+        </button>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="component\bootstrap\dist\css\bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="component\bootstrap\dist\js\bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/css/selectize.default.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.3/js/standalone/selectize.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
